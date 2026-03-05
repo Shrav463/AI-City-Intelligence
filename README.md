@@ -1,5 +1,5 @@
 **AI City Intelligence**
-
+Website link: https://aici.netlify.app/
 -->AI City Intelligence is a project that focuses on analyzing and visualizing urban data to understand how cities function and how technology can improve city systems. The goal of this project is to explore how AI and data-driven insights can help make cities smarter and more efficient.
 -->This application processes city-related data and presents insights through an interactive dashboard so users can better understand patterns and trends in urban environments.
 
