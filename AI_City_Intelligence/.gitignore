@@ -2,7 +2,6 @@ node_modules/
 client/node_modules/
 server/node_modules/
 client/dist/
-server/db/cities.db
 .env
 *.log
 .DS_Store

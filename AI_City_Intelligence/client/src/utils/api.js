@@ -3,7 +3,7 @@
 const BASE = '/api';
 
 async function request(path) {
-  const res = await fetch(`${BASE}${path}`);
+  const res = await fetch(`${import.meta.env.VITE_API_URL}/api/cities`)f;
   const json = await res.json();
   if (!res.ok || !json.success) {
     throw new Error(json.error || `Request failed: ${res.status}`);
