@@ -42,7 +42,7 @@ Website link: https://aici.netlify.app/
 
 **Clone the repository**
 
--->git clone https://github.com/YOUR_USERNAME/AI-City-Intelligence.git
+-->git clone https://github.com/Shrav463/AI-City-Intelligence.git
 
 **Go to the project directory**
 
