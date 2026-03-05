@@ -1,0 +1,39 @@
+/* Footer.module.css */
+.footer {
+  margin-top: 6rem;
+  border-top: 1px solid var(--border);
+  padding: 1.75rem 0;
+}
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.logo {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  color: var(--ink-faint);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.links a {
+  font-family: var(--font-mono);
+  font-size: .68rem;
+  color: var(--ink-faint);
+  text-decoration: none;
+  letter-spacing: .06em;
+  transition: color .15s;
+}
+.links a:hover { color: var(--ink-dim); }
+.note {
+  font-family: var(--font-mono);
+  font-size: .65rem;
+  color: var(--ink-faint);
+}

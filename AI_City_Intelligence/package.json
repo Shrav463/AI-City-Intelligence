@@ -1,0 +1,19 @@
+{
+  "name": "ai-city-intelligence",
+  "version": "0.9.2",
+  "private": true,
+  "description": "Urban report cards — full-stack thesis prototype",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "install:all": "npm install && npm install --workspace=client && npm install --workspace=server",
+    "seed": "npm run seed --workspace=server",
+    "build": "npm run build --workspace=client"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

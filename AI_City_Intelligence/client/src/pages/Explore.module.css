@@ -1,0 +1,24 @@
+/* Explore.module.css */
+.header { padding: 3.5rem 0 2.5rem; border-bottom: 1px solid var(--border); margin-bottom: 2rem; }
+.eyebrow { font-size: .68rem; letter-spacing: .18em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
+.title { font-family: var(--font-display); font-size: clamp(2rem,4vw,3rem); margin-bottom: .5rem; }
+.sub   { color: var(--ink-dim); max-width: 52ch; font-size: .92rem; margin-bottom: 1.5rem; }
+.searchRow { max-width: 460px; }
+
+.controls { display: flex; flex-direction: column; gap: .75rem; margin-bottom: 2rem; }
+
+.filterBar, .sortBar { display: flex; gap: .4rem; flex-wrap: wrap; align-items: center; }
+.filterLabel, .sortLabel { font-size: .65rem; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-dim); margin-right: .25rem; }
+
+.filterBtn, .sortBtn {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: 100px; padding: .3rem .9rem;
+  font-size: .76rem; color: var(--ink-dim); cursor: pointer;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.filterBtn:hover, .sortBtn:hover { border-color: var(--border-hi); color: var(--ink); }
+.active { border-color: var(--accent) !important; color: var(--accent) !important; background: var(--accent-dim) !important; }
+
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px,1fr)); gap: .75rem; margin-bottom: 3rem; }
+.skeletonCard { height: 280px; border-radius: var(--radius-lg); }
+.error { color: var(--red); font-size: .88rem; padding: 1rem 0; }

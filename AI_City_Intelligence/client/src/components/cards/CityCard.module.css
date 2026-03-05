@@ -1,0 +1,28 @@
+/* CityCard.module.css */
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .9rem;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .2s, transform .2s cubic-bezier(0.34,1.56,0.64,1);
+}
+.card:hover { border-color: var(--border-hi); transform: translateY(-3px); }
+
+.top { display: flex; justify-content: space-between; align-items: flex-start; }
+.name { font-family: var(--font-display); font-size: 1.45rem; line-height: 1; margin-bottom: .25rem; }
+.meta { font-family: var(--font-mono); font-size: .63rem; color: var(--ink-dim); letter-spacing: .08em; }
+.grade { font-family: var(--font-display); font-size: 2.8rem; line-height: 1; }
+
+.bars { display: flex; flex-direction: column; gap: 5px; }
+.barRow { display: flex; align-items: center; gap: 7px; }
+.barLabel { font-family: var(--font-mono); font-size: .55rem; color: var(--ink-faint); width: 42px; text-align: right; }
+.barScore { font-family: var(--font-mono); font-size: .56rem; width: 20px; }
+
+.footer { display: flex; justify-content: space-between; align-items: center; }
+.avg  { font-family: var(--font-mono); font-size: .68rem; color: var(--ink-dim); }
+.arrow { font-size: .75rem; font-weight: 700; color: var(--accent); }

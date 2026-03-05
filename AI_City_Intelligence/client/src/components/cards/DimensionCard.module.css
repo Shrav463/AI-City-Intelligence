@@ -1,0 +1,68 @@
+/* DimensionCard.module.css */
+.card {
+  background: var(--bg-card);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: background .2s;
+  display: flex;
+  flex-direction: column;
+  gap: .85rem;
+}
+.card:hover { background: var(--bg-raised); }
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--dim-color, var(--accent));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .7s cubic-bezier(0.22,1,0.36,1);
+}
+.card.revealed::before { transform: scaleX(1); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.iconName {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+.icon { font-size: 1.2rem; line-height: 1; }
+.name {
+  font-size: .76rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.grade {
+  font-family: var(--font-display);
+  font-size: 2.1rem;
+  line-height: 1;
+  color: var(--dim-color, var(--accent));
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity .4s .15s, transform .4s .15s cubic-bezier(0.34,1.56,0.64,1);
+}
+.card.revealed .grade { opacity: 1; transform: translateY(0); }
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.scoreNum {
+  font-family: var(--font-mono);
+  font-size: .7rem;
+}
+.verdict {
+  font-size: .75rem;
+  color: var(--ink-dim);
+  font-style: italic;
+}
